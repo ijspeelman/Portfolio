@@ -180,8 +180,8 @@ count_words_ungeneric
 ggplot(count_words_ungeneric, aes(reorder(word, -word_count), word_count)) +
   geom_col() +
   theme_minimal() +
-  xlab("Top Viewed Words") +
-  ylab("Views")
+  xlab("Top Words") +
+  ylab("Count")
 ```
 
 That is more like it. Looks like our friend LeBron made it on to the list as well.
@@ -219,8 +219,8 @@ ggplot(view_words, aes(reorder(word, views_per_word), views_per_word)) +
   geom_col() +
   theme_minimal() +
   coord_flip() +
-  ylab("Teams") +
-  xlab("Views per word")
+  ylab("Views per word") +
+  xlab("Teams")
 ```
 
 As a Cavaliers fan, can I consider this an NBA championship? We may not get discussed very much, but when we do, we make good discussion.
